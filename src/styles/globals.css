@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+  }
+  html {
+    direction: rtl;
+  }
+  body {
+    font-family: 'Vazirmatn', system-ui, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    direction: rtl;
+    text-align: right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  :root {
+    --font-sans: 'Vazirmatn', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-navy    { color: var(--navy); }
+  .text-teal    { color: var(--teal); }
+  .text-amber   { color: var(--amber); }
+  .bg-navy      { background-color: var(--navy); }
+  .bg-navy-dark { background-color: var(--navy-dark); }
+  .bg-teal      { background-color: var(--teal); }
+  .bg-amber     { background-color: var(--amber); }
+  .border-navy  { border-color: var(--navy); }
+  .shadow-navy  { box-shadow: var(--shadow-navy); }
+  .shadow-teal  { box-shadow: var(--shadow-teal); }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

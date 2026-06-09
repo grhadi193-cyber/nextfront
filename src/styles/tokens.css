@@ -1,0 +1,84 @@
+:root {
+  /* — Colors: Background — */
+  --bg-primary:   #FAFAF7;
+  --bg-secondary: #F0EDE6;
+  --bg-tertiary:  #E5E1D8;
+
+  /* — Colors: Text — */
+  --text-primary:   #1C1C2E;
+  --text-secondary: #4A4A6A;
+  --text-tertiary:  #8A8AA8;
+
+  /* — Colors: Border — */
+  --border-default:  #D8D4CA;
+  --border-emphasis: #B8B4AA;
+
+  /* — Colors: Brand — */
+  --navy:        #1A56DB;
+  --navy-dark:   #1E3A8A;
+  --navy-deeper: #0F2460;
+  --teal:        #0891B2;
+  --teal-dark:   #0E7490;
+  --amber:       #D97706;
+  --amber-dark:  #B45309;
+
+  /* — Colors: Semantic — */
+  --success: #059669;
+  --warning: #D97706;
+  --error:   #DC2626;
+  --info:    #0891B2;
+
+  /* — Gradients — */
+  --gradient-navy: linear-gradient(135deg, var(--navy-deeper) 0%, var(--navy) 100%);
+  --gradient-teal: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
+  --gradient-hero: linear-gradient(135deg, #0F2460 0%, #1A56DB 50%, #0891B2 100%);
+
+  /* — Shadows — */
+  --shadow-sm:    0 2px 8px  rgba(28,28,46,.08);
+  --shadow-md:    0 4px 16px rgba(28,28,46,.10);
+  --shadow-lg:    0 8px 32px rgba(28,28,46,.12);
+  --shadow-navy:  0 4px 16px rgba(26,86,219,.20);
+  --shadow-teal:  0 4px 16px rgba(8,145,178,.20);
+  --shadow-amber: 0 4px 16px rgba(217,119,6,.22);
+
+  /* — Radius — */
+  --radius-xs:   6px;
+  --radius-sm:   10px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-full: 9999px;
+
+  /* — Transitions — */
+  --transition-fast: 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms ease;
+
+  /* — Typography — */
+  --font-family: 'Vazirmatn', system-ui, sans-serif;
+
+  /* — Layout — */
+  --navbar-height: 72px;
+
+  /* — shadcn variable overrides (HSL format: hue deg% lightness%) — */
+  --background:             60 23% 97%;
+  --foreground:             240 24% 15%;
+  --card:                   0 0% 100%;
+  --card-foreground:        240 24% 15%;
+  --popover:                0 0% 100%;
+  --popover-foreground:     240 24% 15%;
+  --primary:                221 79% 48%;
+  --primary-foreground:     0 0% 100%;
+  --secondary:              42 25% 92%;
+  --secondary-foreground:   240 18% 35%;
+  --muted:                  42 25% 92%;
+  --muted-foreground:       240 15% 60%;
+  --accent:                 42 25% 92%;
+  --accent-foreground:      240 24% 15%;
+  --destructive:            0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border:                 43 15% 82%;
+  --input:                  43 15% 82%;
+  --ring:                   221 79% 48%;
+  --radius:                 0.75rem;
+}
